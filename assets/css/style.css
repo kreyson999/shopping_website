@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Mulish", sans-serif;
+}
+section {
+  padding: 2rem 1em;
+  transform: translateY(5rem);
+  transition: 1s;
+  opacity: 0;
+}
+.loadedSection {
+  transform: translateY(0);
+  opacity: 1;
+}
+button.button-text {
+  margin: 1rem 0 0 0;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 1em 3em;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.5em;
+}
+button.button-text:hover {
+  box-shadow: 0em 0em 1em 0.3em rgba(0, 0, 0, 0.3);
+}
+.container {
+  max-width: 70.5rem;
+  margin: 0 auto;
+  text-align: center;
+  overflow-x: hidden;
+}
+@media (min-width: 700px) {
+  section {
+    padding: 2rem 1em;
+  }
+}
