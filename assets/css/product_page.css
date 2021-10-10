@@ -22,6 +22,12 @@ body > section ~ section {
   grid-column: 1 / 6;
   grid-row: 1 / 2;
 }
+.product-img-main img {
+  transition: transform 0.25s ease-in;
+}
+.product-img-main:hover img {
+  transform: scale(1.25);
+}
 .product__gallery > * {
   padding: 0.5em;
   border: 1px solid black;
